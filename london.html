@@ -40,9 +40,40 @@ body { background:#f5f0e8; font-family:'Jost',sans-serif; font-weight:300; color
 .option-header-gold { background:#2e1a0a; color:#d4a86a; }
 .option-header-purple { background:#1a0e2e; color:#c8a0e8; }
 .option-body { background:#fff; padding:14px 15px; }
+
+/* ── BACK NAV ── */
+.back-nav {
+  background:#1a1612;
+  border-bottom:1px solid rgba(184,151,58,0.25);
+  padding:10px 16px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  position:sticky;
+  top:0;
+  z-index:200;
+}
+.back-nav a {
+  color:#d4b96a;
+  text-decoration:none;
+  font-family:'Jost',sans-serif;
+  font-size:0.72rem;
+  letter-spacing:0.1em;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.back-nav a:hover { color:#f5f0e8; }
+.back-nav-sep { color:rgba(184,151,58,0.3); font-size:0.7rem; }
+.back-nav-current { font-family:'Jost',sans-serif; font-size:0.72rem; letter-spacing:0.1em; color:rgba(245,240,232,0.35); }
 </style>
 </head>
 <body>
+<div class="back-nav">
+  <a href="index.html">← Europa 2026</a>
+  <span class="back-nav-sep">·</span>
+  <span class="back-nav-current">Londres</span>
+</div>
 
 <!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
 <div style="background:#1a1612;color:#f5f0e8;padding:44px 20px 32px;text-align:center;position:relative;overflow:hidden;">

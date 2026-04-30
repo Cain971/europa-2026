@@ -453,9 +453,40 @@
     line-height: 1.6;
     font-style: italic;
   }
+
+/* ── BACK NAV ── */
+.back-nav {
+  background:#1a1612;
+  border-bottom:1px solid rgba(184,151,58,0.25);
+  padding:10px 16px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  position:sticky;
+  top:0;
+  z-index:200;
+}
+.back-nav a {
+  color:#d4b96a;
+  text-decoration:none;
+  font-family:'Jost',sans-serif;
+  font-size:0.72rem;
+  letter-spacing:0.1em;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.back-nav a:hover { color:#f5f0e8; }
+.back-nav-sep { color:rgba(184,151,58,0.3); font-size:0.7rem; }
+.back-nav-current { font-family:'Jost',sans-serif; font-size:0.72rem; letter-spacing:0.1em; color:rgba(245,240,232,0.35); }
 </style>
 </head>
 <body>
+<div class="back-nav">
+  <a href="index.html">← Europa 2026</a>
+  <span class="back-nav-sep">·</span>
+  <span class="back-nav-current">España</span>
+</div>
 
 <!-- HEADER -->
 <header class="guide-header">
